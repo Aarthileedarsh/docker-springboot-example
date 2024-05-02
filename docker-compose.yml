@@ -11,7 +11,7 @@ services:
     image: spring-docker-service
     build:
       context: ./spring
-      dockerfile: ./Dockerfile.spring
+      
     depends_on:
       - docker-mysql
     ports:
@@ -27,6 +27,6 @@ services:
     image: angular-docker-service
     build:
       context: ./angular
-      dockerfile: ./Dockerfile.angular
+     
     ports:
       - 4200:4200
